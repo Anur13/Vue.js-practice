@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Form_List />
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Form_List from './components/Form_List'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Form_List,
   }
 }
 </script>
@@ -24,5 +23,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
