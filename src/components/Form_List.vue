@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ContactForm @createNewContact="addContact"  />
+    <ContactForm @createNewContact="addContact" />
     <div class="flex-container">
       <SearchForm v-model="query" />
       <ContactList @deleteContact="deleteContact" :contacts="contacts" :query="query" />
@@ -26,7 +26,7 @@ export default {
       this.contacts = this.contacts.concat(contact)
     },
     deleteContact(id) {
-        this.contacts = this.contacts.filter(item => item.id !== id)
+      this.contacts = this.contacts.filter(item => item.id !== id)
     }
   }
 }

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import { uuid } from 'vue-uuid' // Import uuid  
+import { uuid } from 'vue-uuid' // Import uuid
 export default {
   name: 'ContactForm',
   data() {
@@ -36,7 +36,7 @@ export default {
         name: this.name,
         age: this.age,
         phone: this.phone,
-        id : uuid.v1()
+        id: uuid.v1()
       }
 
       this.$emit('createNewContact', contact)
